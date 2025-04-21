@@ -23,7 +23,7 @@ export class DoubleLinkedList implements List {
             this.head = this.tail = node;
         } else {
             node.prev = this.tail;
-            this.tail.next = node;
+            this.tail!.next = node;
             this.tail = node;
         }
         this._length++;
