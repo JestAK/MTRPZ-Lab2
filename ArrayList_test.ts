@@ -40,7 +40,7 @@ Deno.test("delete out of range index", () => {
 Deno.test("deleteAll", () => {
     const list = new ArrayList();
     ["A", "B", "A", "C"].forEach((e) => list.append(e));
-    list.deleteAll("X");
+    list.deleteAll("A");
     expect(list.get(0)).toBe("B");
     expect(list.get(1)).toBe("C");
 });
